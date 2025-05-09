@@ -20,14 +20,19 @@ export default function AboutPage() {
         <main className="container max-w-4xl py-16 md:py-24">
           <div className="mb-16 text-center">
             <div className="mx-auto mb-6 flex justify-center">
-              {/* Logo placeholder */}
-              <div className="h-16 w-16 rounded-full bg-purple-600"></div>
+              <Image
+                src="/logo.svg"
+                alt="Pulsed Logo"
+                width={64}
+                height={64}
+                className="h-16 w-16 rounded-full"
+              />
             </div>
             <h1 className="bg-gradient-to-br from-purple-300 from-30% via-purple-400 to-purple-500 bg-clip-text text-4xl font-bold tracking-tight text-transparent sm:text-5xl md:text-6xl">
               About Us
             </h1>
           </div>
-
+          
           <div className="space-y-12">
             <section className="rounded-lg border border-purple-900/30 bg-card p-8">
               <h2 className="mb-4 text-2xl font-bold text-purple-400">What is Pulsed?</h2>
@@ -48,11 +53,12 @@ export default function AboutPage() {
               <h2 className="text-2xl font-bold text-purple-400">The Team</h2>
 
               <div className="grid gap-8 md:grid-cols-2">
+                </div>
                 <div className="rounded-lg border border-purple-900/30 bg-card p-6 transition-all hover:border-purple-500/50 hover:shadow-md">
                   <div className="flex flex-col items-center text-center">
                     <div className="mb-4 h-32 w-32 overflow-hidden rounded-full border-2 border-purple-500">
                       <Image
-                        src="/placeholder.svg?height=128&width=128"
+                        src="/public/o4bit.gif"
                         alt="O4bit"
                         width={128}
                         height={128}
@@ -62,41 +68,23 @@ export default function AboutPage() {
                     <h3 className="text-xl font-bold text-purple-400">O4bit</h3>
                     <p className="mb-3 text-sm text-muted-foreground">Founder & Lead Developer</p>
                     <p className="mb-4 text-sm text-muted-foreground">
-                      Coding wizard who turns caffeine into code. Specializes in making computers do cool stuff.
+                      Floatin n' Codin
                     </p>
                     <div className="flex space-x-3">
                       <Link href="https://github.com/O4bit" className="text-muted-foreground hover:text-purple-400">
                         <Github size={20} />
                       </Link>
-                      <Link href="https://bsky.app" className="text-muted-foreground hover:text-purple-400">
+                      <Link href="https://bsky.app/o4bit.me" className="text-muted-foreground hover:text-purple-400">
                         <svg className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
                           <path d="M12 2L1 8.4l11 6.4 11-6.4L12 2zm0 12.8L1 21.2l11-6.4 11 6.4L12 14.8z" />
                         </svg>
                       </Link>
                     </div>
                   </div>
-                </div>
-
-                <div className="rounded-lg border border-purple-900/30 bg-card p-6 transition-all hover:border-purple-500/50 hover:shadow-md">
-                  <div className="flex flex-col items-center text-center">
-                    <div className="mb-4 h-32 w-32 overflow-hidden rounded-full border-2 border-purple-500 bg-purple-900/30">
-                      {/* Empty slot for future team member */}
-                      <div className="flex h-full w-full items-center justify-center text-4xl text-purple-400/50">
-                        +
-                      </div>
-                    </div>
-                    <h3 className="text-xl font-bold text-purple-400">Join Us</h3>
-                    <p className="mb-3 text-sm text-muted-foreground">Next Team Member?</p>
-                    <p className="mb-4 text-sm text-muted-foreground">
-                      This could be you. We're always looking for cool people who make cool things.
-                    </p>
-                  </div>
-                </div>
               </div>
             </section>
           </div>
         </main>
-
         <Footer />
       </div>
     </div>

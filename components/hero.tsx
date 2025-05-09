@@ -8,11 +8,9 @@ export default function Hero() {
         <h1 className="bg-gradient-to-br from-purple-300 from-30% via-purple-400 to-purple-500 bg-clip-text text-4xl font-bold tracking-tight text-transparent sm:text-5xl md:text-6xl lg:text-7xl">
           Pulsed, Inc.
           <br />
-          <span className="text-purple-400">Innovate. Create. Pulse.</span>
         </h1>
         <p className="mx-auto max-w-[42rem] leading-normal text-muted-foreground sm:text-xl sm:leading-8">
-          A software development and publishing company dedicated to creating innovative solutions for the modern
-          digital landscape.
+          We develop and publish software.
         </p>
       </div>
       <div>
