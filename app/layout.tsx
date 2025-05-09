@@ -7,8 +7,9 @@ import MouseMoveEffect from "@/components/mouse-move-effect"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Pulsed, Inc | Software Development and Publishing Company",
-  description: "Software development and publishing company",
+  title: "Pulsed, Inc. - Innovate. Create. Pulse.",
+  description: "Software development and publishing for the modern digital landscape.",
+    generator: 'v0.dev'
 }
 
 export default function RootLayout({
