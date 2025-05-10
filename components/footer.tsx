@@ -42,12 +42,15 @@ export default function Footer() {
                 <Github className="h-5 w-5" />
                 <span className="sr-only">GitHub</span>
               </Link>
-              <Link href="https://bsky.app" className="text-muted-foreground transition-colors hover:text-purple-400">
-                <svg className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M12 2L1 8.4l11 6.4 11-6.4L12 2zm0 12.8L1 21.2l11-6.4 11 6.4L12 14.8z" />
-                </svg>
-                <span className="sr-only">Bluesky</span>
-              </Link>
+      <Link href="https://bsky.app/profile/o4bit.me" className="text-muted-foreground hover:text-purple-400">
+                          <Image
+                          src="/bluesky-icon.svg"
+                          alt="Bluesky"
+                          width={20}
+                          height={20}
+                          className="h-5 w-5"
+                        />
+                      </Link>
             </div>
           </div>
         </div>

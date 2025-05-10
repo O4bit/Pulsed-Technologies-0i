@@ -74,9 +74,31 @@ export default function AboutPage() {
                       <Link href="https://github.com/O4bit" className="text-muted-foreground hover:text-purple-400">
                         <Github size={20} />
                       </Link>
-                      <Link href="https://bsky.app/o4bit.me" className="text-muted-foreground hover:text-purple-400">
-                        <svg className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor">
-                          <path d="M12 2L1 8.4l11 6.4 11-6.4L12 2zm0 12.8L1 21.2l11-6.4 11 6.4L12 14.8z" />
+                      <Link href="https://bsky.app/profile/o4bit.me" className="text-muted-foreground hover:text-purple-400">
+                        <Image
+                          src="/bluesky-icon.svg"
+                          alt="Bluesky"
+                          width={20}
+                          height={20}
+                          className="h-5 w-5"
+                        />
+                      </Link>
+                      <Link href="https://o4bit.me" className="text-muted-foreground hover:text-purple-400">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="20"
+                          height="20"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          className="h-5 w-5"
+                        >
+                          <circle cx="12" cy="12" r="10" />
+                          <line x1="2" y1="12" x2="22" y2="12" />
+                          <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
                         </svg>
                       </Link>
                     </div>
