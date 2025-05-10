@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 import { Github } from "lucide-react"
 
 export default function Footer() {
@@ -7,9 +8,16 @@ export default function Footer() {
       <div className="container flex flex-col gap-8 py-8 md:flex-row md:py-12">
         <div className="flex-1 space-y-4">
           <div className="flex items-center space-x-2">
-            {/* Logo placeholder - replace with your actual logo */}
-            <div className="h-6 w-6 rounded-full bg-purple-600"></div>
-            <h2 className="font-bold text-purple-400">Pulsed, Inc.</h2>
+            <Link href="/" className="flex items-center space-x-2">
+              <Image 
+                src="/logo.svg" 
+                alt="Pulsed Logo" 
+                width={24} 
+                height={24} 
+                className="h-6 w-6"
+              />
+              <span className="font-bold text-purple-400">Pulsed, Inc.</span>
+            </Link>
           </div>
           <p className="text-sm text-muted-foreground">Software development and publishing.</p>
         </div>
