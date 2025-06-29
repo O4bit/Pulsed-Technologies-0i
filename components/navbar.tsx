@@ -6,14 +6,14 @@ import Link from "next/link"
 export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-14 max-w-screen-2xl items-center">
+      <div className="container flex h-[62px] max-w-screen-2xl items-center"> {/* Increased height by ~4mm (16px) */}
         <Link href="/" className="mr-6 flex items-center space-x-2">
           <Image 
             src="/logo.svg" 
             alt="Pulsed Logo" 
-            width={35} 
-            height={35} 
-            className="h-6 w-8"
+            width={48} 
+            height={48} 
+            className="h-10 w-12" // Increased logo size
           />
           <span className="font-bold text-purple-400">Pulsed Inc.</span>
         </Link>
@@ -24,8 +24,8 @@ export default function Navbar() {
         </nav>
         <div className="flex items-center space-x-4">
           <Link href="https://github.com/Pulsedinc" target="_blank" rel="noreferrer">
-            <Button variant="ghost" size="icon">
-              <Github className="h-6 w-6" />
+            <Button variant="ghost" size="icon" className="h-12 w-12"> {/* Bigger button */}
+              <Github className="h-8 w-8" /> {/* Bigger icon */}
               <span className="sr-only">GitHub</span>
             </Button>
           </Link>
