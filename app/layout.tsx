@@ -1,15 +1,14 @@
-import "./globals.css"
+import MouseMoveEffect from "@/components/mouse-move-effect"
+import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import type React from "react"
-import type { Metadata } from "next"
-import MouseMoveEffect from "@/components/mouse-move-effect"
+import "./globals.css"
 
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Pulsed, Inc. - Innovate. Create. Pulse.",
-  description: "Software development and publishing for the modern digital landscape.",
-    generator: 'v0.dev'
+  title: "Pulsed Inc. | Software Development",
+  description: "Software development for the modern digital landscape.",
 }
 
 export default function RootLayout({
