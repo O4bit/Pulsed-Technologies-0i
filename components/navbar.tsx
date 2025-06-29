@@ -1,7 +1,7 @@
-import Link from "next/link"
-import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Github } from "lucide-react"
+import Image from "next/image"
+import Link from "next/link"
 
 export default function Navbar() {
   return (
@@ -12,7 +12,7 @@ export default function Navbar() {
             src="/logo.svg" 
             alt="Pulsed Logo" 
             width={24} 
-            height={24} 
+            height={28} 
             className="h-6 w-6"
           />
           <span className="font-bold text-purple-400">Pulsed, Inc.</span>
